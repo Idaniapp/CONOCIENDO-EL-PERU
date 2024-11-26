@@ -221,15 +221,5 @@
         }
         document.getElementById('destinoSelect').addEventListener('change', post);
     </script>
-    <section>
-        <h3>Comentarios</h3>
-         {% for usuario, datos in comentarios.items() %}
-        <div class="comentario">
-            <p class="usuario">Usuario: {{ usuario }}</p>
-            <p class="comentario">Comentario: {{ datos.comentario }}</p>
-            <p class="valoracion">Valoración: {{ datos.valoracion }}</p>
-        </div>
-        {% endfor %}
-    </section>
 </body>
 </html>
