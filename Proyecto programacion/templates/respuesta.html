@@ -11,19 +11,6 @@
     <section>
         <p>{{ mensaje }}</p>
         <a href="{{ url_for('home') }}">Volver a la página principal</a>
-        <br/><br/>
-        <form action="{{ url_for('respuesta') }}" method="POST">
-            <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario" required>
-            <br/><br/>
-            <label for="comentario">Comentario:</label>
-            <input type="text" id="comentario" name="comentario">
-            <br/><br/>
-            <label for="valoracion">Valoración:</label>
-            <input type="number" id="valoracion" name="valoracion" min="0" max="10">
-            <br/><br/>
-            <input type="submit" value="Enviar">
-        </form>
     </section>
 </body>
 </html>
