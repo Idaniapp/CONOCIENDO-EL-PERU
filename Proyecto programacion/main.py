@@ -29,7 +29,7 @@ def procesar():
     if not destino_faltante:
         return "Por favor, ingresa un destino antes de enviar.", 400
 
-    # Verifica si el destino está en la lista
+    # Verificamos si el destino esta en la lista
     destino_encontrado = None
     for destino in destinos_turisticos:
         destino_faltante = str(destino_faltante)  # Asegúrate de que sea una cadena
@@ -37,7 +37,6 @@ def procesar():
             destino_encontrado = destino
             break
 
-    # Construye el mensaje de respuesta
     if destino_encontrado:
         mensaje = f"¡Gracias por compartir! Te falta visitar: {destino_encontrado}."
     else:
