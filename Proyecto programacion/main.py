@@ -18,21 +18,18 @@ destinos_turisticos = [
 
 @app.route('/', methods=['GET'])
 def home():
-    # Renderiza la plantilla HTML principal
     return render_template('pagina2.html')
 
 @app.route('/procesar', methods=['POST'])
 def procesar():
-    # Obtiene el valor del formulario (nombre del destino que falta por recorrer)
     destino_faltante = request.form.get('destino_faltante')
 
     if not destino_faltante:
         return "Por favor, ingresa un destino antes de enviar.", 400
 
-    # Verificamos si el destino esta en la lista
     destino_encontrado = None
     for destino in destinos_turisticos:
-        destino_faltante = str(destino_faltante)  # Asegúrate de que sea una cadena
+        destino_faltante = str(destino_faltante)
         if destino_faltante.lower() in destino.lower():
             destino_encontrado = destino
             break
