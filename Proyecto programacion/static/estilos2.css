@@ -187,3 +187,27 @@ ul li {
     border: none;
     cursor: pointer;
 }
+
+.usuario {
+    font-family: Arial;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.comentario {
+    font-family: Arial;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.valoracion {
+    font-family: Arial;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 1px;
+}
