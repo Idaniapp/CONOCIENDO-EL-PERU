@@ -41,6 +41,30 @@ def procesar():
 
     return render_template('respuesta.html', mensaje=mensaje)
 
+@app.route('/respuesta', methods=['GET', 'POST'])
+def respuesta():
+    if request.method == 'POST':
+        usuarios = request.form.getlist('usuario')
+        comentario = request.form.get('comentario')
+        valoracion = request.form.get('valoracion')
+        if usuarios and comentario and valoracion:
+            try:
+                valoracion = int(valoracion)
+                for usuario in usuarios:
+                    Comentarios[usuario] = {
+                        "comentario": comentario,
+                        "valoracion": valoracion
+                    }
+                mensaje = "¡Gracias por tu comentario!"
+                print(Comentarios)
+            except ValueError:
+                mensaje = "La valoración debe ser un número entero."
+        else:
+            mensaje = "Por favor, completa todos los campos."
+        return render_template('respuesta.html', mensaje=mensaje)
+    return redirect(url_for('home'))
+
+
 if __name__ == '__main__':
     app.run(debug=True)
 
