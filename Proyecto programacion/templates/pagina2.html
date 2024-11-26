@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Conociendo el Perú</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos2.css') }}">
+</head>
+<body>
+    <div class="barra-superior">
+        <h1>CONOCIENDO EL PERÚ</h1>
+    </div>
+
+    <section class="select-section">
+        <h3>Selecciona un destino turístico para conocer más:</h3>
+        <select id="destinoSelect">
+            <option value="">Seleccione...</option>
+            <option value="machuPicchu">Machu Picchu</option>
+            <option value="lagoTiticaca">Lago Titicaca</option>
+            <option value="lineasdeNazca">Líneas de Nazca</option>
+            <option value="ValleSagradodelosIncas">Valle Sagrado de los Incas</option>
+            <option value="cañondeColca">Arequipa y el Cañón del Colca</option>
+            <option value="selvamazonicadeiquitos">Selva Amazónica de Iquitos</option>
+            <option value="FortalezarealFelipe">Fortaleza Real Felipe</option>
+            <option value="MaleconMiraflores">Malecon Miraflores</option>
+            <option value="Mancora">Mancora</option>
+            <option value="NevadodeHuascaran">Nevado de Huascaran</option>
+        </select>
+    </section>
+
+    <div id="machuPicchu" class="contenido-div">
+        <h5>Machu Picchu</h5>
+        <img src="{{ url_for('static', filename='Machu_Picchu_Peru.jpg') }}" width="400">
+        <p>"Visitar Machu Picchu, la antigua ciudad inca y una de las nuevas maravillas del mundo,
+            es una experiencia única que te conecta con la majestuosidad de la historia y la naturaleza."</p>
+        <ul>
+            <li><strong>Ubicación:</strong> Cusco, Perú.</li>
+            <li><strong>Temperatura:</strong> Entre 12°C y 24°C, con un clima más cálido en comparación con otros destinos andinos.</li>
+            <li><strong>Mejor época para visitarlo:</strong> De mayo a septiembre, durante la temporada seca.</li>
+            <li><strong>Actividades principales:</strong> Recorrido por las ruinas de Machu Picchu, trekking a la montaña Huayna Picchu o Machu Picchu, y explorar el Santuario Histórico.</li>
+            <li><strong>Extras:</strong> Ver el amanecer sobre las ruinas, una experiencia impresionante.</li>
+            <li><strong>Accesibilidad:</strong> Se llega en tren desde Cusco hasta Aguas Calientes, luego en bus hasta la entrada de Machu Picchu.</li>
+        </ul>
+    </div>
+
+    <div id="lagoTiticaca" class="contenido-div">
+        <h5>Lago Titicaca</h5>
+        <img src="{{ url_for('static', filename='lago_titicaca.jpg') }}" width="400">
+        <p>"Descubre la magia del Lago Titicaca, el lago navegable más alto del mundo, donde las aguas brillan como
+            espejos del cielo y las culturas ancestrales te invitan a explorar sus islas flotantes únicas y su riqueza
+            histórica incomparable."</p>
+        <ul>
+            <li><strong>Ubicación:</strong> Puno, en la frontera entre Perú y Bolivia.</li>
+            <li><strong>Temperatura:</strong> Entre 5°C y 20°C, con días soleados y noches frías.</li>
+            <li><strong>Mejor época para visitarlo:</strong> De mayo a septiembre, en la temporada seca.</li>
+            <li><strong>Actividades principales:</strong> Paseos en bote hacia las islas flotantes de los Uros, visitas a la isla Taquile, y exploración de la cultura local.</li>
+            <li><strong>Extras:</strong> Disfrutar de los paisajes del lago y aprender sobre las tradiciones andinas.</li>
+            <li><strong>Accesibilidad:</strong> Se puede llegar desde Puno por bus, tren o avión hasta Juliaca y luego a Puno.</li>
+        </ul>
+    </div>
+
+    <div id="lineasdeNazca" class="contenido-div">
+        <h5>Líneas de Nazca</h5>
+        <img src="{{ url_for('static', filename='Linea_de_nazca.jpg') }}" width="400">
+
+        <p>"Vuela sobre el misterio de las Líneas de Nazca, gigantescos geoglifos en el desierto que desafían el tiempo y
+            la lógica, y vive la emoción de descifrar los secretos de una civilización milenaria desde las alturas."</p>
+        <ul>
+            <li><strong>Ubicación:</strong> Líneas de Nazca, Nazca, Ica.</li>
+            <li><strong>Temperatura:</strong> Alrededor de 18°C a 25°C durante el año, con clima seco y soleado.</li>
+            <li><strong>Mejor época para visitarlas:</strong> De abril a octubre, en la temporada seca, cuando las condiciones para sobrevolar las líneas son óptimas.</li>
+            <li><strong>Actividades principales:</strong> Sobrevuelo en avión ligero para observar las figuras geoglíficas y visita al mirador para vistas panorámicas.</li>
+            <li><strong>Extras:</strong> El museo Antonini ofrece contexto sobre el origen de las líneas y la cultura Nazca.</li>
+            <li><strong>Accesibilidad:</strong> A unas 6 horas en bus desde Lima o 1 hora en avión desde Ica.</li>
+        </ul>
+    </div>
+
+    <div id="ValleSagradodelosIncas" class ="contenido-div">
+        <h5>Valle Sagrado de los Incas</h5>
+        <img src="{{ url_for('static', filename='valle_sagrado_pisac.jpg') }}" width="400">
+        <p>"Adéntrate en el Valle Sagrado de los Incas, un lugar donde la historia y la naturaleza se entrelazan en paisajes
+            impresionantes, ruinas ancestrales y una energía única que te conectará con el corazón del Imperio Inca."</p>
+        <ul>
+            <li><strong>Ubicación:</strong> Valles Sagrados de los Incas, Cusco.</li>
+            <li><strong>Temperatura:</strong> Entre 10°C y 20°C, con noches frescas y días cálidos, especialmente entre los meses de abril a octubre.</li>
+            <li><strong>Mejor época para visitarlos:</strong> De mayo a septiembre, en la temporada seca, ideal para explorar las ruinas y disfrutar del paisaje.</li>
+            <li><strong>Actividades principales:</strong> Visitas a las ruinas de Ollantaytambo, Pisac, y Moray, además de caminatas por los hermosos paisajes andinos.</li>
+            <li><strong>Extras:</strong> Mercado de Pisac para compras de artesanías y el Valle de Urubamba para disfrutar de la gastronomía local.</li>
+            <li><strong>Accesibilidad:</strong> A 1-2 horas en auto desde Cusco, fácil de recorrer en excursiones o tours.</li>
+        </ul>
+    </div>
+
+    <div id="cañondeColca" class ="contenido-div">
+        <h5>Arequipa y el Cañón del Colca</h5>
+        <img src="{{ url_for('static', filename='mirador_canon_del_colca.jpg') }}" width="400">
+        <p>"Descubre Arequipa y el majestuoso Cañón del Colca, donde la elegancia de la Ciudad Blanca se combina con uno de los
+            cañones más profundos del mundo, ofreciendo vistas espectaculares, cóndores en vuelo y una experiencia inolvidable en
+            la naturaleza."</p>
+        <ul>
+            <li><strong>Ubicación:</strong> Cañón del Colca, Arequipa.</li>
+            <li><strong>Temperatura:</strong> Varía entre 5°C y 20°C, con noches frías y días soleados.</li>
+            <li><strong>Mejor época para visitarlo:</strong> De abril a octubre, durante la temporada seca, con buen clima para las caminatas.</li>
+            <li><strong>Actividades principales:</strong> Senderismo, observación del cóndor andino y visitas a los pueblos tradicionales.</li>
+            <li><strong>Extras:</strong> Disfrutar de las aguas termales de La Calera y explorar los miradores del cañón.</li>
+            <li><strong>Accesibilidad:</strong> A unas 3-4 horas en auto desde Arequipa.</li>
+        </ul>
+    </div>
+
+    <div id="selvamazonicadeiquitos" class ="contenido-div">
+        <h5>Selva Amazónica de Iquitos</h5>
+        <img src="{{ url_for('static', filename='selva_amazonico_de_iquitos.jpg') }}" width="400">
+        <p>"Sumérgete en la Selva Amazónica de Iquitos, un paraíso de biodiversidad donde la naturaleza cobra vida con exótica fauna,
+             paisajes exuberantes y la oportunidad de convivir con comunidades nativas que te conectarán con las raíces del Amazonas."</p>
+        <ul>
+            <li><strong>Ubicación:</strong> Selva Amazónica, Iquitos, Loreto.</li>
+            <li><strong>Temperatura:</strong> Entre 24°C y 32°C todo el año, con alta humedad.</li>
+            <li><strong>Mejor época para visitarla:</strong> De mayo a septiembre, durante la temporada seca, cuando las lluvias son menos frecuentes.</li>
+            <li><strong>Actividades principales:</strong> Paseos en bote por el río Amazonas, caminatas por la selva, y visitas a comunidades nativas.</li>
+            <li><strong>Extras:</strong> Observación de fauna como delfines rosados y monos, y contacto con la cultura amazónica.</li>
+            <li><strong>Accesibilidad:</strong> Se llega por avión desde Lima, ya que Iquitos es una ciudad aislada por tierra.</li>
+        </ul>
+    </div>
+
+    <div id="FortalezarealFelipe" class ="contenido-div">
+        <h5>Fortaleza Real Felipe</h5>
+        <img src="{{ url_for('static', filename='Fortaleza_real_Felipe.jpeg') }}" width="400">
+        <p>"Visita la imponente Fortaleza Real Felipe, un tesoro histórico en el puerto del Callao que te transportará al pasado colonial
+            del Perú, mientras recorres sus muros llenos de historias de defensa y valentía frente al océano Pacífico."</p>
+        <ul>
+            <li><strong>Ubicación:</strong> Fortaleza Real Felipe, Callao, Lima.</li>
+            <li><strong>Temperatura:</strong> Promedio de 17°C a 22°C, con clima más fresco y húmedo durante el invierno (junio a septiembre).</li>
+            <li><strong>Mejor época para visitarla:</strong> Todo el año, pero la temporada seca (diciembre a abril) es más cómoda para recorrer al aire libre.</li>
+            <li><strong>Actividades principales:</strong> Recorridos históricos, exposiciones de arte militar, y vistas al puerto del Callao.</li>
+            <li><strong>Extras:</strong> Ideal para conocer la historia colonial y disfrutar de la arquitectura militar.</li>
+            <li><strong>Accesibilidad:</strong> Cerca del centro de Lima, fácil acceso por transporte público o en auto.</li>
+        </ul>
+    </div>
+
+    <div id="MaleconMiraflores" class ="contenido-div">
+        <h5>Malecón Miraflores</h5>
+        <img src="{{ url_for('static', filename='Malecon_Miraflores.jpeg') }}" width="400">
+        <p>"Recorre el Malecón de Miraflores, un lugar donde la belleza del océano se encuentra con el dinamismo urbano, ofreciendo vistas
+            espectaculares, parques llenos de flores y un ambiente perfecto para disfrutar de un atardecer inolvidable sobre los acantilados de Lima."</p>
+        <ul>
+            <li><strong>Ubicación:</strong> Malecón de Miraflores, Lima.</li>
+            <li><strong>Temperatura:</strong> Varía entre 15°C y 25°C según la estación, con clima más cálido de diciembre a marzo.</li>
+            <li><strong>Mejor época para parapente:</strong> De octubre a abril, cuando los vientos son más estables.</li>
+            <li><strong>Actividades principales:</strong> Caminatas, ciclismo, y vistas al océano Pacífico desde los acantilados.</li>
+            <li><strong>Extras:</strong> Espectaculares atardeceres y acceso a restaurantes y cafeterías cercanas.</li>
+        </ul>
+
+    </div>
+
+    <div id="Mancora" class ="contenido-div">
+        <h5>Máncora</h5>
+        <img src="{{ url_for('static', filename='Mancora.jpeg') }}" width="400">
+        <p>"Escapa al paraíso tropical de Máncora, donde las playas de arena dorada, el sol radiante y el mar cálido crean el ambiente perfecto para relajarte,
+             practicar deportes acuáticos y disfrutar de la vibrante vida nocturna en uno de los destinos más populares del norte de Perú."</p>
+        <ul>
+            <li><strong>Ubicación:</strong> Mancora, Piura</li>
+            <li><strong>Temperatura:</strong> Oscila entre 25°C y 31°C todo el año.</li>
+            <li><strong>Mejor época para surfear:</strong> De octubre a marzo, con olas más consistentes.</li>
+            <li><strong>Tiempo de ocio:</strong> Piscinas naturales en marea baja y bares relajados en el malecón.</li>
+            <li><strong>Extras:</strong> Atardeceres espectaculares y mercados locales con artesanías.</li>
+        </ul>
+    </div>
+
+    <div id="NevadodeHuascaran" class ="contenido-div">
+        <h5>Nevado de Huascarán</h5>
+        <img src="{{ url_for('static', filename='Nevado_de_Huascaran.jpeg') }}" width="400">
+        <p>"Conquista las alturas del Nevado de Huascarán, el pico más alto del Perú, rodeado de paisajes impresionantes, glaciares y montañas majestuosas,
+             donde los amantes de la aventura pueden disfrutar de un reto único y una conexión profunda con la naturaleza en los Andes."</p>
+        <ul>
+            <li><strong>Ubicación:</strong> Cordillera Blanca, en el departamento de Áncash</li>
+            <li><strong>Huascarán Sur:</strong> 6,768 metros sobre el nivel del mar (msnm), el punto más alto de Perú.</li>
+            <li><strong>Huascarán Norte:</strong> 6,655 metros sobre el nivel del mar (msnm).</li>
+            <li><strong>Interes:</strong> Senderismo y impresionantes vistas de glaciares y lagunas de colores intensos.</li>
+        </ul>
+    </div>
+
+    <div class="formulario">
+        <h6>¿Qué lugar te falta recorrer?</h6>
+        <form action="/procesar" method="POST">
+            <input type="text" name="destino_faltante" placeholder="Ingrese un destino">
+            <button type="submit">¡TU DESTINO TE ESPERA!</button>
+        </form>
+    </div>
+
+    <script>
+        // Función para obtener el valor seleccionado en el select
+        function get() {
+            return document.getElementById('destinoSelect').value;  // Obtiene el valor seleccionado
+        }
+
+        // Función 'post' para mostrar el destino seleccionado
+        function post() {
+            const opcion = get();  // Usamos la función 'get' para obtener la opción seleccionada
+
+            // Ocultar todos los destinos
+            const destinos = document.getElementsByClassName('contenido-div');
+            for (let i = 0; i < destinos.length; i++) {
+                destinos[i].style.display = 'none';  // Oculta todos los destinos
+            }
+            // Usamos if, else if(en este lenguaje no se usa el elif) y el else
+            if (opcion === 'machuPicchu') {
+                document.getElementById('machuPicchu').style.display = 'block';
+            } else if (opcion === 'lagoTiticaca') {
+                document.getElementById('lagoTiticaca').style.display = 'block';
+            } else if (opcion === 'lineasdeNazca') {
+                document.getElementById('lineasdeNazca').style.display = 'block';
+            } else if (opcion === 'ValleSagradodelosIncas') {
+                document.getElementById('ValleSagradodelosIncas').style.display = 'block';
+            } else if (opcion === 'cañondeColca') {
+                document.getElementById('cañondeColca').style.display = 'block';
+            } else if (opcion === 'selvamazonicadeiquitos') {
+                document.getElementById('selvamazonicadeiquitos').style.display = 'block';
+            } else if (opcion === 'FortalezarealFelipe') {
+                document.getElementById('FortalezarealFelipe').style.display = 'block';
+            } else if (opcion === 'MaleconMiraflores') {
+                document.getElementById('MaleconMiraflores').style.display = 'block';
+            } else if (opcion === 'Mancora') {
+                document.getElementById('Mancora').style.display = 'block';
+            } else if (opcion === 'NevadodeHuascaran') {
+                document.getElementById('NevadodeHuascaran').style.display = 'block';
+            } else {
+                alert("Por favor, selecciona un destino.");
+            }
+
+        }
+        // Llamar a la función 'post' cuando el usuario cambie la selección
+        document.getElementById('destinoSelect').addEventListener('change', post);
+    </script>
+</body>
+</html>

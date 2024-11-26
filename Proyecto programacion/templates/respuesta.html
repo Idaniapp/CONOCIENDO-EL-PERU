@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Respuesta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos2.css') }}">
+</head>
+<body>
+    <div class="barra-superior">
+        <h1>¡Tu Destino Te Espera!</h1>
+    </div>
+    <section>
+        <p>{{ mensaje }}</p>
+        <a href="{{ url_for('home') }}">Volver a la página principal</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,189 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.barra-superior {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.barra-superior h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+
+.select-section {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+
+.contenido-div {
+    display: none;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#machuPicchu.contenido-div {
+    background-color: #228b2271;
+    h5{
+        color: #2e2712 ;
+    }
+}
+
+#lagoTiticaca.contenido-div {
+    background-color: #0978b059;
+    h5{
+        color: #132535 ;
+    }
+}
+
+#lineasdeNazca.contenido-div {
+    background-color: #43290f65;
+    h5{
+        color: #382c08 ;
+    }
+}
+
+#ValleSagradodelosIncas.contenido-div {
+    background-color: #63890c8e;
+    h5{
+        color: #08250d ;
+    }
+}
+
+#cañondeColca.contenido-div {
+    background-color: #eee8aaab;
+    h5{
+        color: #51281d ;
+    }
+}
+
+#selvamazonicadeiquitos.contenido-div {
+    background-color: #0b5d1365;
+    h5{
+        color: #243125 ;
+    }
+}
+
+#FortalezarealFelipe.contenido-div {
+    background-color: #95915c95;
+    h5{
+        color: #4b3b0a ;
+    }
+}
+
+#MaleconMiraflores.contenido-div {
+    background-color: #f5f5dca8;
+    h5{
+        color: #4a466f ;
+    }
+}
+
+#Mancora.contenido-div {
+    background-color: #9ce0dba7;
+    h5{
+        color: #1b4a4e ;
+    }
+}
+
+#NevadodeHuascaran.contenido-div {
+    background-color: #e0ffffb6;
+    h5{
+        color: #171716 ;
+    }
+}
+
+
+img {
+    display: block; 
+    margin: 10px auto; 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+
+}
+
+p {
+    font-family: Garamond;
+    font-size: 24px;
+    text-align: center;
+}
+
+h5 {
+    font-family: Impact;
+    font-size: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+h6 {
+    font-size: 24px; 
+}
+
+
+ul {
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+ul li {
+    font-size: 20px; 
+    font-family: "Cambria italic";
+    list-style-position: inside;
+}
+
+.formulario {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.formulario input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.formulario button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
